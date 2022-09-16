@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+body{
+    font-family: 'Raleway', sans-serif;
+}
+h1,h2{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.bg-gray{
+    background: url(./images/bg-curve-desktop.svg) no-repeat top;
+    background-size: cover;
+}
+.bg-grey{
+    background-color: hsl(238, 22%, 44%);
+}
+.bg-blue{
+    background-color: hsl(243, 87%, 12%);
+}
+/* .bg-color{
+    background-color: hsl(240, 75%, 98%);
+} */
+.color{
+    color: hwb(170 24% 38%);
+}
+.icon{
+    font-size: 1.5rem;
+}
+.navbar>.container {
+    display: flex;
+    flex-direction: row!important;
+}
+.card{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: 0 none;
+}
+.profile{
+    display: flex;
+}
+@media (max-width:1000px) {
+    
+    .w-50,.w-75 {
+        width: 80% !important;
+    }
+}
+@media (max-width:500px) {
+    .bg-gray{
+        background:  url(./images/bg-curve-mobile.svg) no-repeat top;
+        background-size: cover;
+    }
+    h1,h2{
+        font-size: 1.2rem;
+    }
+   
+    .logo{
+        width: 20%;
+        object-fit: cover;
+    }
+    aside{
+        text-align: center;
+    }
+    aside>button{
+        width: 100%;
+    }
+    .bg-grey input, .bg-grey button{
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+    .d-flex{
+        flex-direction: column-reverse !important;
+        align-items: center;
+    }
+    .bg-grey .d-flex{
+        flex-direction: column !important;
+    }
+    .w-50,.w-75{
+        width: 100% !important;
+    }
+}
+.attribution { font-size: 15px; text-align: center; }
+.attribution a { color: hsl(225, 25%, 91%); }
